@@ -15,9 +15,9 @@ This repository isolates computational logic distinctively:
 
 | Filter Type | Python (Native) | NumPy (Vectors) | Cython (C-Compiled) |
 |-------------|-----------------|-----------------|---------------------|
-| **Gaussian**| 4.2284         s| 0.0666         s| 0.0070             s|
-| **Sobel**   | 6.3765         s| 0.0784         s| 0.0128             s|
-| **Median**  | 3.5663         s| 0.1063         s| 0.0699             s|
+| **Gaussian**| 0.4769         s| 0.0060         s| 0.0019             s|
+| **Sobel**   | 0.7455         s| 0.0139         s| 0.0040             s|
+| **Median**  | 0.4421         s| 0.0240         s| 0.0223             s|
 
 **Logarithmic Benchmark Visualization:**
 ![Performance Benchmark Chart](../data/processed/Algorithm_Benchmark_Chart.png)
