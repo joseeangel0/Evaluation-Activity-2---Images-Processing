@@ -1,6 +1,6 @@
 # Performance Analysis: Image Processing Evaluation
 
-**Context:** The target image processed measured 250x250 pixels in geometry.
+**Context:** The target image processed measured 512x512 pixels in geometry.
 
 ## 1. Code Implementation Framework
 
@@ -15,9 +15,9 @@ This repository isolates computational logic distinctively:
 
 | Filter Type | Python (Native) | NumPy (Vectors) | Cython (C-Compiled) |
 |-------------|-----------------|-----------------|---------------------|
-| **Gaussian**| 0.0961         s| 0.0005         s| 0.0011             s|
-| **Sobel**   | 0.1631         s| 0.0026         s| 0.0021             s|
-| **Median**  | 0.0871         s| 0.0064         s| 0.0043             s|
+| **Gaussian**| 4.2284         s| 0.0666         s| 0.0070             s|
+| **Sobel**   | 6.3765         s| 0.0784         s| 0.0128             s|
+| **Median**  | 3.5663         s| 0.1063         s| 0.0699             s|
 
 **Logarithmic Benchmark Visualization:**
 ![Performance Benchmark Chart](../data/processed/Algorithm_Benchmark_Chart.png)
